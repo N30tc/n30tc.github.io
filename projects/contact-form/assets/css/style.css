@@ -1,0 +1,201 @@
+/* The Normalized Part, for this WebPage... */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*
+    max-height: 100vh;
+    */
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+
+/* CSS Styles, in Code, below... */
+
+.container {
+    width: 60%;
+    margin: 1.35rem auto;
+    border: 1px solid #39393a;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #297373;
+    color: #39393a;
+    min-width: 600px;
+}
+
+header {
+    margin: 1.2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Grandstander', cursive;
+    border: 2px solid #39393a;
+    width: 90%;
+    border-radius: 1px;
+    background-color: #85ffc7;
+    min-width: 500px;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.8em;
+    line-height: 1.8;
+    font-weight: 900;
+}
+
+h2 {
+    line-height: 1.5;
+    text-decoration: underline;
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 2.2em;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+    color: #39393a;
+}
+
+form {
+    margin: 1rem auto;
+    background-color: #FF8552;
+    border-radius: 10px;
+    padding: 1.42rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    border: 2px solid #39393a;
+}
+
+form ol {
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+form fieldset {
+    border: none;
+    margin-bottom: 10px;
+}
+
+form legend {
+    color: #39393a;
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-family: 'Syne', sans-serif;
+}
+
+form ol li {
+    background-color: #FFBB9E;
+    border: 1px solid #39393a;
+    border-radius: 5px;
+    line-height: 30px;
+    padding: 5px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+form label {
+    font-size: 13px;
+    width: 100px;
+}
+
+form input,
+form textarea {
+    background-color: #FFF;
+    border: none;
+    border-radius: 3px;
+    /* Fonts-Style into Form Fields... */
+    font: italic 14px "Times New Roman", Times, Serif;
+    outline: none;
+    padding: 5px;
+    width: 220px;
+}
+
+form input[type="submit"] {
+    border: 1px solid #39393a;
+    margin: auto;
+    text-align: center;
+    font-style: normal;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+footer {
+    width: 90%;
+    margin: 1.32rem auto;
+    font-family: 'Work Sans', sans-serif;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #39393a;
+    border: none;
+    border-radius: 3px;
+    padding: 0.1rem;
+    align-items: center;
+    opacity: 0.9;
+}
+
+footer p {
+    font-size: 1.28em;
+    font-weight: 300;
+    color: #FF8552;
+    text-align: center;
+}
+
+footer a {
+    color: #85ffc7;
+}
+
+
+/* Pseudos-Classes, pour le Formulaire... */
+
+form fieldset:last-of-type {
+    margin-bottom: 0;
+}
+
+form input:invalid {
+    border: 1px solid #e03131;
+}
+
+form input:valid {
+    border: 1px solid #c0eb75;
+}
+
+form input:focus,
+form textarea:focus {
+    background: #f1f3f5;
+}
