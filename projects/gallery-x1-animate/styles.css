@@ -1,0 +1,100 @@
+section h1 {
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* 
+:: La Création, d'Images Responsive ::
+Pour que la création d'images responsive, fonctionne correctement...
+Il ne faut pas que les Images soient enfants directs d'éléments de type : FLEX...
+*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    max-width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+section ul {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-gap: 18px;
+    /*
+    grid-auto-flow: row dense;
+    */
+}
+
+section ul li {
+    padding: 10px;
+}
+
+footer {
+    font-size: 0.75em;
+}
+
+#bigPicture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 0;
+    transition: opacity 1s, visibility 1s;
+}
+
+#bigPicture.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+img {
+    border: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+address {
+    font-weight: 620;
+}
+
+@media screen and (min-width: 768px) {
+    section ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    section ul {
+        grid-template-columns: repeat(4, 1fr);
+        /*
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        */
+    }
+}
