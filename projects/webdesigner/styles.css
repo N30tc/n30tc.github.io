@@ -1,0 +1,575 @@
+/* Variables... */
+
+:root {
+  /* Cette variable est inutilisée car les Bordures sont supprimées...
+  --bord: 1px solid black;
+  */
+  --bleu: #5CA1F1;
+  --bleu-clair: #a6c9f1;
+  --gris-fonce: #343a40;
+}
+
+/* Personal Normalize... */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  background-color: #FFF;
+  text-decoration: none;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+/* ...START OF my CSS CODE... */
+
+/* Modèles de boites : les Conteneurs... */
+
+.box-container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+
+  font-family: "Roboto", "Helvetica", "Verdana", "Arial", sans-serif;
+  font-size: 16px;
+  color: var(--gris-fonce);
+
+  line-height: 1.6;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Autres Balises, de Structure... */
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: var(--bleu);
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  width: 1400px;
+  height: auto;
+  margin: 7rem auto;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  background-color: #F5F5F5;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+}
+
+article {
+  width: 1400px;
+  height: auto;
+  margin: 3rem auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  width: 1400px;
+  height: auto;
+  margin: 5rem auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: var(--bleu);
+
+  margin: 3.1rem 0 0 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  color: #FFF;
+}
+
+main {
+  width: 1400px;
+  height: auto;
+  margin: 7.8rem auto;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.alien {
+  width: 50%;
+  margin: 1rem auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Elements SPEC. ... */
+
+.video {
+  display: flex;
+  margin: auto;
+}
+
+.citation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.85rem auto;
+  width: 50%;
+
+  opacity: 0.9;
+}
+
+.mini-sep {
+  width: 2.14rem;
+
+  color: var(--bleu);
+}
+
+.middle-sep {
+  width: 80px;
+
+  color: var(--bleu);
+}
+
+.larger-sep {
+  width: 80%;
+  margin: 0.5rem auto;
+
+  color: var(--bleu-clair);
+  opacity: 0.44;
+}
+
+.identity p {
+  margin-right: 3rem;
+}
+
+.top-identity p,
+.bottom-identity p {
+  margin-right: 2.5rem;
+}
+
+/* Perso. des Blockquotes */
+
+blockquote {
+  color: #495057;
+}
+
+.citation blockquote:before {
+  content: '"';
+  font-size: 3rem;
+  color: #495057;
+  position: relative;
+  top: -2rem;
+}
+
+.citation blockquote {
+  font-size: 1.6rem;
+  margin: 3.5rem auto;
+  line-height: 1.2;
+  text-align: center;
+  display: flex;
+
+  color: #495057;
+}
+
+.citation cite {
+  font-size: 1.15rem;
+  font-style: normal;
+  text-align: center;
+
+  margin: 1.5rem auto;
+}
+
+section .left-touch blockquote {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+}
+
+/* Propriétés du Menu */
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  font-weight: 400;
+  margin-left: 2.35rem;
+}
+
+/* Propriétés : Icônes Réseaux Sociaux... */
+
+.networks-icons li {
+  margin-left: 1rem;
+}
+
+/* Eléments secondaires de la Structure */
+
+.present {
+  color: #FFF;
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 1.2;
+
+  width: 75%;
+
+  position: relative;
+}
+
+.present:before {
+  content: '"';
+  font-size: 3rem;
+  font-weight: 300;
+  font-style: normal;
+
+  color: #FFF;
+  position: absolute;
+  top: -2.8rem;
+}
+
+.left-touch {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-touch {
+  width: 50%;
+  font-size: 0.9rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro {
+  width: 50%;
+  margin: 1rem auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-hero {
+  width: 1400px;
+  height: auto;
+  margin: 5rem auto;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-left {
+
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.hero-right {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.aside-left {
+  margin: 2.5rem 0;
+}
+
+.aside-right {
+  margin: 2.5rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.section-footer {
+  height: 100%;
+  width: 1400px;
+  margin: 0.4rem auto;
+}
+
+.top-footer {
+  color: #FFF;
+  font-weight: bold;
+
+  height: 50%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.top-header {
+  color: #FFF;
+  font-weight: bold;
+
+  width: 1400px;
+  height: auto;
+  margin: 1.5rem auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottom-footer {
+  color: #FFF;
+  height: 50%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.all-rights {
+  width: 50%;
+  margin: 1rem auto;
+
+  display: flex;
+  justify-content: row;
+  justify-content: flex-start;
+}
+
+.networks-icons {
+  width: 50%;
+  margin: 1.5rem auto;
+
+  display: flex;
+  justify-content: row;
+  justify-content: flex-end;
+}
+
+.bottom-identity {
+  width: 50%;
+  height: auto;
+  margin: 1rem auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.top-identity {
+  width: 50%;
+  height: auto;
+  margin: 0.5rem auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.nav-header {
+  color: #FFF;
+  width: 50%;
+  height: auto;
+  margin: 0.5rem auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-footer {
+  color: #FFF;
+  width: 50%;
+  height: auto;
+  margin: 1rem auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* Propriétés des Boutons */
+
+.touch-buttons {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.touch-buttons p {
+  font-weight: bold;
+}
+
+.touch-buttons .speak-button:last-of-type {
+  margin-left: 1.2rem;
+}
+
+.speak-button:active,
+.speak-button:visited:active {
+  color: #FFF;
+  background-color: var(-bleu);
+}
+
+.speak-button:link,
+.speak-button:visited {
+  display: block;
+  text-decoration: none;
+
+  color: #FFF;
+  background-color: var(--bleu);
+  font-weight: 900;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  border: 1px solid #2e3440;
+  border-radius: 8px;
+
+  width: 180px;
+  margin: 1rem 0;
+
+  font-size: 1rem;
+}
+
+.speak-button:hover,
+.speak-button:visited:hover {
+  color: var(--bleu);
+  background-color: #FFF;
+}
+
+.speak-button:active,
+.speak-button:visited:active {
+  color: #FFF;
+  background-color: var(-bleu);
+}
+
+/* Propriétés des liens... */
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  opacity: 0.81;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+/* Les titres... */
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+/* Largeur : Partie 'Contact'... */
+
+.block-contact {
+  display: flex;
+  flex-direction: row;
+  margin: 1.4rem 0;
+}
+
+.desc-contact {
+  width: 50%;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 1.4rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.button-contact {
+  display: flex;
+  width: 50%;
+}
+
+.button-contact .speak-button {
+  margin: 2rem;
+}
+
+.text-contact {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+/* Séparateurs... */
+
+.sep-contact {
+  width: 4.4rem;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  color: var(--bleu);
+}
+
+.along-sep {
+  width: 100%;
+  margin: auto;
+
+  color: var(--bleu-clair);
+  opacity: 0.44;
+}
+
+/* Partie : Contact */
+
+.title-contact {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  position: relative;
+}
+
+.title-contact h2 {
+  text-align: right;
+  font-weight: 400;
+  color: #212529;
+}
