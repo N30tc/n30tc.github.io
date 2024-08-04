@@ -1,0 +1,40 @@
+/*
+html,
+body {
+    font-size: 62.5%;
+}
+*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 2.5rem auto;
+    width: 72%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2.5rem;
+    box-shadow: 2px 1px 2px black;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+h1,
+h2,
+h3 {
+    padding: 0.4rem;
+    margin: 0.8rem;
+}
+
+p {
+    margin: 0 2.4rem;
+    text-align: justify;
+}

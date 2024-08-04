@@ -64,3 +64,16 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+.counter-container {
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.counter {
+  font-size: 1em;
+  font-weight: bold;
+  color: #333;
+}
